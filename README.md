@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 First of all make sure you have Node.js installed. If note just go to https://nodejs.org/en/ and get it.
 
 NB. If you're running the app on Windows you have to enable the local global scripts by running this command from PowerShell running as administrator
-(you can find out more about that at (http://tiny.cc/0vfjsz))
+(you can find out more about that at http://tiny.cc/0vfjsz)
 
 ```
 Set-ExecutionPolicy RemoteSigned
@@ -115,7 +115,7 @@ and the program will produce a JSON object as follows:
 
 ## Authors
 
-* **Ionut Birlad** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Ionut Birlad** - *Initial work* - [ionutbirlad](https://github.com/ionutbirlad)
 
 ## License
 
