@@ -44,7 +44,7 @@ Now you're ready to run the application
 
 Now you can run all test from your terminal according to the following guide
 
-### parse a simple flags
+### 1) parse a simple flags
 
 digit the following input:
 
@@ -58,7 +58,7 @@ and the program will produce a JSON object as follows:
 {"foo": true}
 ```
 
-### parse a composite flags
+### 2) parse a composite flags
 
 digit the following input:
 
@@ -72,7 +72,7 @@ and the program will produce a JSON object as follows:
 {"foo": "bar"}
 ```
 
-### parse a composite flags with integer values
+### 3) parse a composite flags with integer values
 
 digit the following input:
 
@@ -86,7 +86,7 @@ and the program will produce a JSON object as follows:
 {"number": 1}
 ```
 
-### parse multiple flags at once
+### 4) parse multiple flags at once
 
 digit the following input:
 
