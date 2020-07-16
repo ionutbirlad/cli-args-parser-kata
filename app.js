@@ -62,10 +62,8 @@
 
 // ----------------------------CONSTRUCTOR RESULTS----------------------------
   function Result(inputOne, inputTwo) {
-
     this.inputs = inputOne;
     this.chiavi = inputTwo;
-
   }
 // ----------------------------CONSTRUCTOR RESULTS----------------------------
 
