@@ -26,25 +26,9 @@ const { program } = require('commander');
   program
   .option('-f, --foo [item]', 'option')
   .option('-n, --number <item>', 'option')
-  .option('-b, --bar <item> [item]', 'option')
+  .option('-b, --bar <item>', 'option')
   .description('This command will take your input and will produce a valid output according to the original kata documentation (see the readme.md file)')
   .action(() => {
-
-  // if ((program.foo) && !(program.number, program.bar)) {
-  //   let result = kParse(program.foo);
-  //   console.log(result);
-  // }
-  //
-  // if ((program.number) && !(program.foo, program.bar)) {
-  //   let result = kParse(program.foo, parseInt(program.number));
-  //   console.log(result);
-  // }
-  //
-  // if (program.foo, program.number, program.bar) {
-  //   let result = kParse(program.foo, parseInt(program.number), program.bar);
-  //   console.log(result);
-  // }
-
     let result = kParse(program.opts(), program);
     console.log(result);
   });
@@ -53,3 +37,27 @@ const { program } = require('commander');
 
 // processing data
 program.parse(process.argv);
+
+
+
+
+
+
+
+
+// ------------------------------discarded version------------------------------
+
+// if ((program.foo) && !(program.number, program.bar)) {
+//   let result = kParse(program.foo);
+//   console.log(result);
+// }
+//
+// if ((program.number) && !(program.foo, program.bar)) {
+//   let result = kParse(program.foo, parseInt(program.number));
+//   console.log(result);
+// }
+//
+// if (program.foo, program.number, program.bar) {
+//   let result = kParse(program.foo, parseInt(program.number), program.bar);
+//   console.log(result);
+// }

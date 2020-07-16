@@ -109,6 +109,20 @@ and the program will produce a JSON object as follows:
 {"bar": "baz", "foo": true, "number": 1}
 ```
 
+### 5) handle multiple values for the same flag
+
+digit the following input:
+
+```
+cli-args-parser-kata --foo --bar baz,zab --number 1
+```
+
+and the program will produce a JSON object as follows:
+
+```
+{"bar": ["baz", "zab"], "foo": true, "number": 1}
+```
+
 ## Built With
 
 * [Commander.js](https://github.com/tj/commander.js/) - The library used to create the customized commands
