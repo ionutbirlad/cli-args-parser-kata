@@ -36,19 +36,22 @@
   const kParse = (input, program) => {
 
     let optionValues = input;
-    let allOptions = Object.keys(optionValues);
-    let selectedOptions = [];
 
-    // I check wich options are selected
-    for (var i = 0; i < allOptions.length; i++) {
-      if (program[allOptions[i]]) {
-        selectedOptions.push(allOptions[i]);
-        // delete optionValues.allOptions[i];
+    // data mockup
+      let allOptions = Object.keys(optionValues);
+      let selectedOptions = [];
+
+      // I check wich options are selected
+      for (var i = 0; i < allOptions.length; i++) {
+        if (program[allOptions[i]]) {
+          selectedOptions.push(allOptions[i]);
+          // delete optionValues.allOptions[i];
+        }
       }
-    }
 
-    // here I sort the selected options in alphabetical order
-    selectedOptions.sort();
+      // here I sort the selected options in alphabetical order
+      selectedOptions.sort();
+    // data mockup
 
     const result = new Result(optionValues, selectedOptions);
     return result.createResult();
