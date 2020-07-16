@@ -66,15 +66,15 @@
   }
 // ----------------------------CONSTRUCTOR RESULTS----------------------------
 
-// ------------------------------METODI RESULTS------------------------------
+// ------------------------------RESULTS METHODS------------------------------
   Result.prototype.createResult = function () {
     let res = {};
     for (var i = 0; i < this.chiavi.length; i++) {
-      res[this.chiavi[i]] = this.inputs[this.chiavi[i]];
+      this.chiavi[i] == 'number' ? res[this.chiavi[i]] = parseInt(this.inputs[this.chiavi[i]]) : res[this.chiavi[i]] = this.inputs[this.chiavi[i]];
     }
     return res;
   };
-// ------------------------------METODI RESULTS------------------------------
+// ------------------------------RESULTS METHODS------------------------------
 
 // here I export the methods that are used in commander.js
   module.exports = {
