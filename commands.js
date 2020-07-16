@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 // exporting the global object used by commander
 const { program } = require('commander');
 

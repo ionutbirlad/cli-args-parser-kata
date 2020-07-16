@@ -10,6 +10,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 First of all make sure you have Node.js installed. If note just go to https://nodejs.org/en/ and get it.
 
+NB. If you're running the app on Windows you have to enable the local global scripts by running this command from PowerShell running as administrator
+(you can find out more about that at (http://tiny.cc/0vfjsz))
+
+```
+Set-ExecutionPolicy RemoteSigned
+```
+
 ### Installing
 
 If the previuos prerequisite is satisfied run
@@ -27,6 +34,8 @@ And NPM will install all dependecies according to the package.json file
   "version": "1.0.0",
   "description": "A CLI arguments parser",
   "main": "app.js",
+  "preferGlobal": true,
+  "bin": "./commands.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -49,7 +58,7 @@ Now you can run all test from your terminal according to the following guide
 digit the following input:
 
 ```
---foo
+cli-args-parser-kata --foo
 ```
 
 and the program will produce a JSON object as follows:
@@ -63,7 +72,7 @@ and the program will produce a JSON object as follows:
 digit the following input:
 
 ```
---foo bar
+cli-args-parser-kata --foo bar
 ```
 
 and the program will produce a JSON object as follows:
@@ -77,7 +86,7 @@ and the program will produce a JSON object as follows:
 digit the following input:
 
 ```
---number 1
+cli-args-parser-kata --number 1
 ```
 
 and the program will produce a JSON object as follows:
@@ -91,7 +100,7 @@ and the program will produce a JSON object as follows:
 digit the following input:
 
 ```
---foo --bar baz --number 1
+cli-args-parser-kata --foo --bar baz --number 1
 ```
 
 and the program will produce a JSON object as follows:
