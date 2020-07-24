@@ -8,9 +8,9 @@
 
 
   // --------------main method two--------------
-  const kParse = (input, program) => {
+  const kParse = (program) => {
 
-    let optionValues = input;
+    let optionValues = program.opts();
 
     // data mockup
       let allOptions = Object.keys(optionValues);

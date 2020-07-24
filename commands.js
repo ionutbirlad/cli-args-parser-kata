@@ -29,7 +29,7 @@ const { program } = require('commander');
   .option('-b, --bar <item>', 'option')
   .description('This command will take your input and will produce a valid output according to the original kata documentation (see the readme.md file)')
   .action(() => {
-    let result = kParse(program.opts(), program);
+    let result = kParse(program);
     console.log(result);
   });
   // -------------------------arguments parser commands-------------------------
